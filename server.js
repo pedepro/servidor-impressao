@@ -6,7 +6,10 @@ const PORT = 4008; // Porta para a API HTTP
 const WS_PORT = 4009; // Porta para o WebSocket
 const CLIENTS = {}; // Armazena os clientes conectados
 
+const cors = require('cors');
+app.use(cors());
 app.use(express.json());
+
 
 // Configurar WebSocket
 const wss = new WebSocketServer({ port: WS_PORT });
