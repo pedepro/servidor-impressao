@@ -2,8 +2,8 @@ const express = require('express');
 const { WebSocketServer } = require('ws');
 
 const app = express();
-const PORT = 4008; // Porta para a API HTTP
-const WS_PORT = 4009; // Porta para o WebSocket
+const PORT = 2020; // Porta para a API HTTP
+const WS_PORT = 2021; // Porta para o WebSocket
 const CLIENTS = {}; // Armazena os clientes conectados
 
 const cors = require('cors');
