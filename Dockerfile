@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 2020 2021
 
 # Comando para iniciar o servidor
-CMD ["npm", "start"]
+CMD ["node", "server.js"]
